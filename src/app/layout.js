@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import "./globals.css";
 import { Zen_Antique } from "next/font/google";
 import { Manrope } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

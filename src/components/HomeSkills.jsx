@@ -11,6 +11,7 @@ const HomeSkills = () => {
         "React",
         "SQL",
         "R",
+        "POPM SAFe 6",
         "Figma",
         "Content Marketing",
         "Algorithms",

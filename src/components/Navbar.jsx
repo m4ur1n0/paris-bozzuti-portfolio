@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
-import {AnimatePresence, motion, useScroll, useTransform} from 'framer-motion'
+import { motion, useScroll, useTransform} from 'framer-motion'
 import Hamburger from 'hamburger-react'
 
 const Navbar = () => {
@@ -11,7 +11,12 @@ const Navbar = () => {
 
 
     const pathname = usePathname();
+
     const pages = [
+        {
+            path : "/",
+            title : "Paris Bozzuti"
+        },
         {
             path : '/about',
             title : "About"
@@ -26,6 +31,8 @@ const Navbar = () => {
         }
     ];
 
+
+    const pageName = pages.filter((p) => p.path === pathname).map((pg) => pg.title);
     // track our y scroll
     const {scrollY } = useScroll();
 
@@ -93,7 +100,7 @@ const Navbar = () => {
             <div className='site-links flex justify-center gap-24 w-full'>
 
                 {
-                    pages.map((p, i) => (
+                    pages.slice(1).map((p, i) => (
                         <Link href={p.path} className='text-xl m-0 transition-all duration-300 ease-in-out hover:scale-[1.05]' key={i}
                             style={{
                                 fontWeight : pathname === p.path ? "bold" : "normal"
@@ -125,7 +132,7 @@ const Navbar = () => {
                 </div>
 
                 <Link href="/" className=' w-full p-0 m-0'>
-                    <h1 className='!text-[2.3rem] md:!text-[3.2rem] font-antique text-center'>Paris Bozzuti</h1>
+                    <h1 className='!text-[2.3rem] md:!text-[3.2rem] font-antique text-center'>{pageName}</h1>
                 </Link>
 
             </div>
@@ -135,15 +142,17 @@ const Navbar = () => {
                 {/* these should be their own component cause we use em above  */}
 
 
-                    {pages.map((p, i) => (
-                        <Link href={p.path} className='!text-lg !md:text-xl m-0 p-0 text-app_black text-center' key={i}
-                            style={{
-                                fontWeight : pathname === p.path ? "bold" : "normal"
-                            }}
-                        >
-                            {p.title}
-                        </Link>
-                    ))}
+                    {pages.map((p, i) => {
+                        if (p.path !== pathname) {
+                            return (<Link href={p.path} className='!text-lg !md:text-xl m-0 p-0 text-app_black text-center' key={i}
+                                // style={{
+                                //     fontWeight : pathname === p.path ? "bold" : "normal"
+                                // }}
+                            >
+                                {p.title}
+                            </Link>);
+                        }
+                    })}
 
             </div>
 

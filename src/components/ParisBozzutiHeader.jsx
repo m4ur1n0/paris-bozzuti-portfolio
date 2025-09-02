@@ -37,7 +37,7 @@ const ParisBozzutiHeader = () => {
             Senior at Northwestern University studying Data Science and Radio/Television/Film.
         </p>
 
-        <div className='paris-bozutti-headshot w-[80dvw] h-[80dvw] md:w-auto md:h-auto rounded-xl lg:rounded-none lg:w-auto lg:h-auto lg:max-w-1/3'
+        <div className='paris-bozutti-headshot w-[80dvw] h-[80dvw] md:w-auto md:h-auto rounded-xl lg:rounded-none lg:w-[24dvw] lg:h-auto lg:max-w-1/3'
             style={{
                 boxShadow: "0px 10px 10px rgb(0,0,0,0.3)"
             }}
