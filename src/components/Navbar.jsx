@@ -144,7 +144,7 @@ const Navbar = () => {
 
                     {pages.map((p, i) => {
                         if (p.path !== pathname) {
-                            return (<Link href={p.path} className='!text-lg !md:text-xl m-0 p-0 text-app_black text-center' key={i}
+                            return (<Link href={p.path} className='!text-lg md:!text-3xl m-0 p-0 text-app_black text-center' key={i}
                                 // style={{
                                 //     fontWeight : pathname === p.path ? "bold" : "normal"
                                 // }}

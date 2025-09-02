@@ -3,11 +3,15 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='flex justify-between items-center px-4 py-2 mb-[5%] lg:mb-[2%] w-[90%] ml-[5%] md:w-[80%] md:ml-[10%] lg:w-[40%] lg:ml-[30%] rounded-lg shadow-lg border border-gray-300 max-h-[6%]'>
+    // <footer className='absolute bottom-[5%] flex justify-between items-center px-4 py-2 w-[90%] ml-[5%] md:w-[80%] md:ml-[10%] lg:w-[40%] lg:ml-[30%] rounded-lg shadow-lg border border-gray-300 max-h-[6%]'>
+
+    <footer className=' flex justify-between items-center px-4 py-2 mb-[5%] lg:mb-[2%] w-[90%] ml-[5%] md:w-[80%] md:ml-[10%] lg:w-[40%] lg:ml-[30%] rounded-lg shadow-lg border border-gray-300 max-h-[6%]'>
+
+
 
 
         <p className='!p-0 !m-0 '>
-            &copy; <strong>Paris Bozutti</strong>, 2025
+            &copy; <strong>Paris Bozzuti</strong>, 2025
         </p>
 
 
