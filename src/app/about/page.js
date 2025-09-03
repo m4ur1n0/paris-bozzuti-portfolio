@@ -59,7 +59,7 @@ const page = () => {
             <ListeningTo />
 
             <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]'>
-                Outside of work, I am a co-founder of a non-profit theatre company, a huge Mets fan, and an amateur robotics enthusiast. I spend my free time playing guitar and watching Vanderpump Rules.
+                Outside of work, I am a co-founder of a non-profit theater company, a huge Mets fan, and an amateur robotics enthusiast. I spend my free time playing guitar and watching Vanderpump Rules.
             </p>
 
         </div>

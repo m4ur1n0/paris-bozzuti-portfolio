@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee'
 
 const HomeSkills = () => {
 
-    const skills = [ // in the future this could be incliude links or diff behaviors
+    const skills = [
 
         "Product Management",
         "Data Analysis & Viz",
