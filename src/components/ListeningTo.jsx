@@ -12,7 +12,7 @@ const ListeningTo = () => {
         let albs = await a.json();
 
 
-        console.log(albs);
+        // console.log(albs);
         setAlbumData(albs);
       }
     
