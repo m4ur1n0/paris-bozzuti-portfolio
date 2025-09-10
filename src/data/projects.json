@@ -1,0 +1,67 @@
+{
+    "battery_finder" : {
+        "title": "Battery Finder App",
+        "description": [
+            "As a product management intern at Publicis Sapient, I spent a summer leading a team of software engineers through the development and deployment of a mobile-first web app for a confidential client.",
+            "After completing market and product research, I guided the team through feature development and implementation, worked on Figma UX designs, and tracked progress on tools like Jira and Confluence.",
+            "Working in a SAFe Agile framework, we completed 6 1-week sprints and developed a mobile web app for users to find car batteries, utilizing OCR, OpenAI, various APIs, and deploying on Azure."
+        ],
+        "thumbnail": "/images/battery_finder_thumbnail.png",
+        "project_images": [
+            "/images/Battery-App3.gif",
+            "/images/Battery-App-2.png",
+            "/images/Battery-App.png"
+        ],
+        "skills": ["Product Design", "UX Design", "App Development"]
+    },
+    "task_manager" : {
+        "title": "Task Manager App",
+        "description": [
+            "A work in progress currently, the Non-Profit Task Manager app was created to track and manage deadlines, budget and purchase tracking, social tracking, and AI-marketing tools. Created for my non-profit organization Adams Theatre Company, I am prioritizing building features that would help to keep us organized and speed up our current tasks that create bottlenecks in our process."
+        ],
+        "thumbnail": "/vectors/no-image.svg",
+        "project_images": [
+            "/vectors/no-image.svg"
+        ],
+        "skills": []
+    },
+    "interactive_data_viz" : {
+        "title": "Interactive Data Viz",
+        "description": [
+            "https://majoo8-paris-bozzuti.shinyapps.io/Bozzuti_Paris_Final_Submission/",
+            "Created in a data visualization course at Northwestern, I worked with MLB batting data to analyze 4 Mets legends batting abilities and visualize them in dynamic displays on a shiny app. Using SQL and Python for data cleaning and exploratory analysis, I worked to find trends among data points over 60 years of data.",
+            "Using R and Shiny, the app allows users to select a player and compare three team stats to that of the selected player over the course of his career. It also shows the career quantiles of each player to see how they performed among all New York Mets."
+        ],
+        "thumbnail": "/images/Interactive-Data-Viz.png",
+        "project_images": [
+            "/images/Interactive-Data-Viz.png"
+        ],
+        "skills": []
+    },
+    "diamond_bid_creator" : {
+        "title" : "Diamond Bid Creator",
+        "description" : [
+            "This project uses Python and various machine learning models to analyze diamond qualities and their selling prices to optimize creating bids on luxury items.", 
+            "Packages Used: Pandas, NumPy, Matplotlib, Seaborn, Sklearn, XGBoost, LightGBM Models Used: XGBoost, GridSearchCV, RandomizedSearchCV, DecisionTree, AdaBoost, GradientBoost, LightGBM, Ridge, Lasso, RandomizedSearch, KFold.", 
+            "I developed predictive machine learning models using XGBoost with hyperparameter tuning (RandomizedSearch and GridSearch) to estimate diamond Price and Retail values, enabling profit prediction. This involved applying advanced data preprocessing techniques, including KNN imputation for missing values and one-hot encoding for categorical features, to optimize model performance. From there, I designed a custom profit-maximization function inspired by the knapsack framework, incorporating budget constraints and iterative logic to ensure only high-margin offers were selected."
+        ],
+        "thumbnail" : "/images/Diamond-Bid-Creator-1.png",
+        "project_images" : [
+            "/images/Diamond-Bid-Creator-1.png"
+        ],
+        "skills" : []
+    },
+    "adams_theater_co" : {
+        "title" : "Website Design: Adams Theater Company",
+        "description" : [
+            "https://www.adamstheatrecompany.com/home", 
+            "As a Producer and Co-Founder of Adams Theatre Company, I developed a new website for our non-profit to increase engagement with local audiences and artists. Our company produces theatrical shows every year and needs to have a strong digital presence to grow and maintain strong relationships with our partners.", 
+            "As we are currently in the process of opening a second branch in Chicago, the website and brand identity is shifting to clarify the vision of each branch."],
+        "thumbnail" : "/images/ATC-Website.webp",
+        "project_images" : [
+            "/images/ATC-Logo-Website.webp",
+            "/images/ATC-Website.webp"
+        ],
+        "skills" : ["Web Design"]
+    }
+}

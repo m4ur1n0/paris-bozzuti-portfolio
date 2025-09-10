@@ -7,7 +7,7 @@ const page = () => {
     
 
   return (
-    <main className='w-dvw px-[5%] h-full flex flex-col gap-[5%] pt-[16dvh] lg:pt-[18dvh]'>
+    <main className='w-dvw px-[5%] h-full flex flex-col gap-[5%] pt-[16dvh] lg:pt-[18dvh] mb-4 md:mb-[32%] lg:mb-4'>
 
         {/* WORK EXPERIENCE */}
 
