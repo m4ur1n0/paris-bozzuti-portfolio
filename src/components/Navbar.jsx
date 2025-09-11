@@ -29,10 +29,14 @@ const Navbar = () => {
         {
             path : '/contact',
             title : "Contact"
+        },
+        {
+            path : '/projects_by_skill',
+            title : "Skills"
         }
     ];
 
-    // console.log(pathname.startsWith("/work/"));
+    // console.log(pathname);
     // projects[pathname.slice(6)].title
     const pageName = (pathname.startsWith("/work/")) ? "Project" : pages.filter((p) => p.path === pathname).map((pg) => pg.title);
     // track our y scroll
@@ -102,7 +106,7 @@ const Navbar = () => {
             <div className='site-links flex justify-center gap-24 w-full'>
 
                 {
-                    pages.slice(1).map((p, i) => (
+                    pages.slice(1, 4).map((p, i) => (
                         <Link href={p.path} className='text-xl m-0 transition-all duration-300 ease-in-out hover:scale-[1.05]' key={i}
                             style={{
                                 fontWeight : pathname === p.path ? "bold" : "normal"

@@ -1,23 +1,42 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import IndividualSkill from './IndividualSkill'
+import projects from "@/data/projects.json"
+
+function getSkills() {
+    let skills = new Set();
+
+    // since we're O(n) searching already, may as well do both at once
+    for (let p in projects) {
+        // console.log(p);
+        for(let s of projects[p].skills) {
+
+            skills.add(s);
+
+        }
+    }
+
+    return skills;
+}
 
 const HomeSkills = () => {
 
-    const skills = [
+    // const skills = [
 
-        "Product Management",
-        "Data Analysis & Viz",
-        "Python",
-        "React",
-        "SQL",
-        "R",
-        "POPM SAFe 6",
-        "Figma",
-        "Content Marketing",
-        "Algorithms",
+    //     "Product Management",
+    //     "Data Analysis & Viz",
+    //     "Python",
+    //     "React",
+    //     "SQL",
+    //     "R",
+    //     "POPM SAFe 6",
+    //     "Figma",
+    //     "Content Marketing",
+    //     "Algorithms",
 
-    ]
+    // ]
+
+    const skills = Array.from(getSkills());
 
   return (
     <section className='home-skills-section w-full flex flex-col items-center px-[5%] mt-12 lg:mt-0 mb-24'>

@@ -22,7 +22,7 @@ const ListeningTo = () => {
     
 
   return (
-    <div className='w-full px-6 py-4 bg-gray-200 rounded-xl flex flex-col h-[16dvh] md:h-[25dvh] lg:h-[32dvh] shadow-md md:shadow-lg lg:mb-10'>
+    <div className='w-full px-6 py-4 bg-gray-200 rounded-xl flex flex-col h-[18vh] md:h-[25vh] lg:h-[32vh] shadow-md md:shadow-lg lg:mb-10'>
         <p className='!font-[600] text-[1rem] md:text-[1.9rem] lg:text-[1.3rem]'>What I'm listening to...</p>
       
         <div className='flex justify-center gap-2 items-center h-full'>

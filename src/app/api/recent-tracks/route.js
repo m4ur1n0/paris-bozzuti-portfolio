@@ -5,7 +5,7 @@ export async function GET(req) {
 
     try {
         const tracks = await getRecentTracks(40);
-        console.log("Tracks : ", JSON.stringify(tracks));
+        // console.log("Tracks : ", JSON.stringify(tracks));
         // console.log("TRACSK : ", tracks);
         // return new Response(JSON.stringify(tracks), { status: 200 });
 
