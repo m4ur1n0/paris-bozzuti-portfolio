@@ -9,16 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/helper-compilation-targets": "^7.27.2",
+    "@radix-ui/react-slot": "^1.2.3",
     "axios": "^1.11.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.12",
     "hamburger-react": "^2.5.2",
+    "lucide-react": "^0.543.0",
     "next": "15.4.6",
     "querystring": "^0.2.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-fast-marquee": "^1.6.5",
     "react-loading-indicators": "^1.0.1",
-    "spotify-web-api-node": "^5.0.2"
+    "spotify-web-api-node": "^5.0.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "^1.3.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

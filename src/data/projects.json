@@ -12,31 +12,7 @@
             "/images/Battery-App-2.png",
             "/images/Battery-App.png"
         ],
-        "skills": ["Product Design", "UX Design", "App Development"]
-    },
-    "task_manager" : {
-        "title": "Task Manager App",
-        "description": [
-            "A work in progress currently, the Non-Profit Task Manager app was created to track and manage deadlines, budget and purchase tracking, social tracking, and AI-marketing tools. Created for my non-profit organization Adams Theatre Company, I am prioritizing building features that would help to keep us organized and speed up our current tasks that create bottlenecks in our process."
-        ],
-        "thumbnail": "/vectors/no-image.svg",
-        "project_images": [
-            "/vectors/no-image.svg"
-        ],
-        "skills": []
-    },
-    "interactive_data_viz" : {
-        "title": "Interactive Data Viz",
-        "description": [
-            "https://majoo8-paris-bozzuti.shinyapps.io/Bozzuti_Paris_Final_Submission/",
-            "Created in a data visualization course at Northwestern, I worked with MLB batting data to analyze 4 Mets legends batting abilities and visualize them in dynamic displays on a shiny app. Using SQL and Python for data cleaning and exploratory analysis, I worked to find trends among data points over 60 years of data.",
-            "Using R and Shiny, the app allows users to select a player and compare three team stats to that of the selected player over the course of his career. It also shows the career quantiles of each player to see how they performed among all New York Mets."
-        ],
-        "thumbnail": "/images/Interactive-Data-Viz.png",
-        "project_images": [
-            "/images/Interactive-Data-Viz.png"
-        ],
-        "skills": []
+        "skills": ["Product Management", "PoPM SAFe 6", "Data Analysys & Viz", "Figma", "React", "Jira", "Confluence"]
     },
     "diamond_bid_creator" : {
         "title" : "Diamond Bid Creator",
@@ -49,10 +25,10 @@
         "project_images" : [
             "/images/Diamond-Bid-Creator-1.png"
         ],
-        "skills" : []
+        "skills" : ["Python", "Machine Learning", "Data Analysys & Viz", "Algorithms"]
     },
     "adams_theater_co" : {
-        "title" : "Website Design: Adams Theater Company",
+        "title" : "Adams Theater Company Website",
         "description" : [
             "https://www.adamstheatrecompany.com/home", 
             "As a Producer and Co-Founder of Adams Theatre Company, I developed a new website for our non-profit to increase engagement with local audiences and artists. Our company produces theatrical shows every year and needs to have a strong digital presence to grow and maintain strong relationships with our partners.", 
@@ -63,5 +39,29 @@
             "/images/ATC-Website.webp"
         ],
         "skills" : ["Web Design"]
+    },
+    "task_manager" : {
+        "title": "Task Manager App",
+        "description": [
+            "A work in progress currently, the Non-Profit Task Manager app was created to track and manage deadlines, budget and purchase tracking, social tracking, and AI-marketing tools. Created for my non-profit organization Adams Theatre Company, I am prioritizing building features that would help to keep us organized and speed up our current tasks that create bottlenecks in our process."
+        ],
+        "thumbnail": "/vectors/no-image.svg",
+        "project_images": [
+            "/vectors/no-image.svg"
+        ],
+        "skills": ["Product Management", "Python", "React", "Figma", "Algorithms"]
+    },
+    "interactive_data_viz" : {
+        "title": "Interactive Data Viz",
+        "description": [
+            "https://majoo8-paris-bozzuti.shinyapps.io/Bozzuti_Paris_Final_Submission/",
+            "Created in a data visualization course at Northwestern, I worked with MLB batting data to analyze 4 Mets legends batting abilities and visualize them in dynamic displays on a shiny app. Using SQL and Python for data cleaning and exploratory analysis, I worked to find trends among data points over 60 years of data.",
+            "Using R and Shiny, the app allows users to select a player and compare three team stats to that of the selected player over the course of his career. It also shows the career quantiles of each player to see how they performed among all New York Mets."
+        ],
+        "thumbnail": "/images/Interactive-Data-Viz.png",
+        "project_images": [
+            "/images/Interactive-Data-Viz.png"
+        ],
+        "skills": ["R", "SQL", "Data Analysys & Viz"]
     }
 }

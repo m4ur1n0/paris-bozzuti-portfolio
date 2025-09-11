@@ -108,6 +108,109 @@ export default async function page({params}) {
 
         </section>
 
+        {/* mobile and tablet version ig  */}
+
+        <section className='flex flex-col items-center gap-8 lg:hidden'>
+
+            <h1 className='font-antique text-center !text-[2.5rem] md:!text-[3rem]'>
+                {project.title}
+            </h1>
+
+            {/* again, for now, just hard coding num pics  */}
+            {project.project_images.length <= 1 ?
+                
+                <div className='flex justify-center items-center w-full max-h-[30vh] md:max-h-[40vh] overflow-hidden'>
+                    {
+                        project.project_images.map((im, i) => (
+                            <img className='object-contain' src={im} alt={`${project.title} Image`} key={i} />
+                        ))
+                    }
+                </div>
+
+                :
+
+                <div className='flex flex-row justify-start gap-2 w-full max-h-[30vh] md:max-h-[40vh] overflow-y-hidden overflow-x-scroll'>
+                    {
+                        project.project_images.map((im, i) => (
+                            <img className='max-h-[30vh] md:max-h-[40vh] w-auto flex-none' src={im} alt={`${project.title} Image`} key={i} />
+                        ))
+                    }
+                </div>
+
+                // (project.project_images.length >= 2) ?
+                //     <div className='flex flex-row gap-2 w-full max-h-[30vh] md:max-h-[40vh] overflow-y-hidden overflow-x-scroll'>
+                //         {
+                //             project.project_images.map((im, i) => (
+                //                 <img className='object-contain' src={im} alt={`${project.title} Image`} key={i} />
+                //             ))
+                //         }
+                //     </div>
+
+                // :
+                // else 3
+                // <div className='flex flex-col gap-2 justify-center items-center w-[40%] overflow-hidden'>
+                //     {/* first two */}
+                //     <div className='flex gap-2 justify-center items-center w-full overflow-hidden'>
+                //         <img className='object-contain max-w-[49%]' src={project.project_images[0]} alt={`${project.title} Image`} />
+
+                //         <img className='object-contain max-w-[49%]' src={project.project_images[1]} alt={`${project.title} Image`} />
+                //     </div>
+
+                //     {/* last  */}
+                //     <img className='object-contain' src={project.project_images[2]} alt={`${project.title} Image`} />
+                    
+                // </div>
+            
+            }
+
+            {
+                project.description[0].startsWith("http") ?
+
+                <div className='flex flex-col items-center w-full gap-4 md:gap-8 mb-2'>
+                    <a href={project.description[0]} target="_blank" className='text-gray-700 text-2xl underline'>View Project.</a>
+                    {/* here we assume no project desc will ever be JUST a link  */}
+                    <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]'>
+                        {project.description[1]}
+                    </p>
+
+                    <div className='flex gap-3 flex-wrap w-full justify-center mb-2'>
+                        {project.skills.map((sk, i) => (
+                            <IndividualSkill skill={sk} key={i} />
+                        ))}
+                    </div>
+
+                    {/* any leftover desc  */}
+                    {project.description.slice(2).map((d, i) => (
+                        <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]' key={i}>
+                            {d}
+                        </p>
+                    ))}
+                </div>
+                :
+                <div className='flex flex-col items-center w-full gap-4 md:gap-8 mb-2'>
+
+                    <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]'>
+                        {project.description[0]}
+                    </p>
+
+                    <div className='flex gap-3 flex-wrap w-full justify-center mb-2'>
+                        {project.skills.map((sk, i) => (
+                            <IndividualSkill skill={sk} key={i} />
+                        ))}
+                    </div>
+
+                    {/* any leftover desc  */}
+                    {project.description.slice(1).map((d, i) => (
+                        <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]' key={i}>
+                            {d}
+                        </p>
+                    ))}
+
+                </div>
+            }
+
+        </section>
+
 
       
     </main>

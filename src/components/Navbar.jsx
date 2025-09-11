@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import { motion, useScroll, useTransform} from 'framer-motion'
 import Hamburger from 'hamburger-react'
+import projects from "@/data/projects.json"
 
 const Navbar = () => {
 
@@ -31,8 +32,9 @@ const Navbar = () => {
         }
     ];
 
-
-    const pageName = pages.filter((p) => p.path === pathname).map((pg) => pg.title);
+    // console.log(pathname.startsWith("/work/"));
+    // projects[pathname.slice(6)].title
+    const pageName = (pathname.startsWith("/work/")) ? "Project" : pages.filter((p) => p.path === pathname).map((pg) => pg.title);
     // track our y scroll
     const {scrollY } = useScroll();
 
@@ -131,8 +133,8 @@ const Navbar = () => {
                     <Hamburger direction='right' color='#171717' duration={0.4} ease="easeIn" size={35} toggled={mobileMenuOpen} toggle={setMobileMenuOpen} />
                 </div>
 
-                <Link href="/" className=' w-full p-0 m-0'>
-                    <h1 className='!text-[2.3rem] md:!text-[3.2rem] font-antique text-center'>{pageName}</h1>
+                <Link href={pageName === "Project" ? "/work" : "/"} className=' w-full p-0 m-0'>
+                    <h1 className={'!text-[2.3rem] md:!text-[3.2rem] font-antique text-center'}>{pageName}</h1>
                 </Link>
 
             </div>
