@@ -53,7 +53,7 @@ export default async function page({searchParams}) {
                 ))
                 :
                 <p className='text-[1.8rem] md:text-[2.2rem] lg:text-[2.5rem] text-center'>
-                    Sorry, <span className='font-bold'>{skill}</span> isn't listed with any of my projects.
+                    Sorry, <span className='font-bold'>{skill}</span> isn&apos;t listed with any of my projects.
                 </p>
             }
 
