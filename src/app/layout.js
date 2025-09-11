@@ -20,6 +20,9 @@ const zen_antique = Zen_Antique({
 export const metadata = {
   title: "Paris Bozzuti",
   description: "Portfolio website for data scientist Paris Bozutti.",
+  icons: {
+    icon: "/images/portfolio-fav-icon.ico"
+  }
 };
 
 export default function RootLayout({ children }) {
