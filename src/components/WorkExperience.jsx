@@ -23,8 +23,8 @@ const WorkExperience = () => {
             dates : "4.2020 - Present",
         },
         {
-            icon : "/images/novartis.png",
-            alt : "Novartis Logo",
+            icon : "/images/northwestern.png",
+            alt : "Northwestern Medill Logo",
             title : "Integrated Marketing Assistant",
             dates : "9.2022 - Present",
         },

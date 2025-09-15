@@ -149,8 +149,8 @@ const Navbar = () => {
 
 
                     {pages.map((p, i) => {
-                        if (p.path !== pathname) {
-                            return (<Link href={p.path} className='!text-lg md:!text-3xl m-0 p-0 text-app_black text-center' key={i}
+                        if (p.path !== pathname && p.title !== "Skills") {
+                            return (<Link href={p.path} className='!text-lg md:!text-3xl m-0 p-0 text-app_black text-center' key={i} onClick={() => setMobileMenuOpen(false)}
                                 // style={{
                                 //     fontWeight : pathname === p.path ? "bold" : "normal"
                                 // }}
